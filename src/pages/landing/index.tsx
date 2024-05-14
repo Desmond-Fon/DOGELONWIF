@@ -1,5 +1,4 @@
 import Nav from "../../components/Nav";
-// import logo from "../../assets/logo.png";
 import arrow from "../../assets/arrow.png";
 import hero from "../../assets/hero.png";
 import chart from "../../assets/pie.png";
@@ -7,19 +6,67 @@ import section from "../../assets/section.png";
 import xFooter from "../../assets/xFooter.png";
 import tgFooter from "../../assets/tgFooter.png";
 import Container from "../../assets/footer.png";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Landing = () => {
+  const { ref: ref1, inView: inView1 } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
+  const { ref: ref2, inView: inView2 } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
+  const { ref: ref3, inView: inView3 } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
+  const { ref: ref4, inView: inView4 } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
+  const { ref: ref5, inView: inView5 } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
+  const { ref: ref6, inView: inView6 } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
+  const { ref: ref7, inView: inView7 } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <div className=" pt-[100px]">
-        <div className="sticky top-0 z-40">
+        <motion.div
+          initial={{ y: -250 }}
+          animate={{ y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="sticky top-0 z-40"
+        >
           <Nav />
-        </div>
+        </motion.div>
         <div
           className="mt-[68px] mb-[194px] mx-[8%] rounded-[40px] bg-primary"
           id="home"
         >
-          <div className="flex justify-between items-center pt-[60px] pr-[68px] pl-[122px]">
+          <motion.div
+            ref={ref7}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: inView7 ? 1 : 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex justify-between items-center pt-[60px] pr-[68px] pl-[122px]"
+          >
             <div className="flex flex-col items-center ">
               <div className=" text-center transform rotate-1 origin-center">
                 <h1 className="text-[60px] text-white colab leading-[50px]">
@@ -44,7 +91,7 @@ const Landing = () => {
             </div>
 
             <img src={hero} alt="" className="mr-[120px]" />
-          </div>
+          </motion.div>
         </div>
 
         <div
@@ -59,7 +106,13 @@ const Landing = () => {
           <div className="roadmapBg pt-14 flex justify-center gap-32 relative  w-full">
             <img src={section} alt="" className="relative" />
             <div className="flex justify-between absolute w-full pt-[40px] items-start">
-              <div className="bg-white shadow-md pl-[30px] mx-[16%] pr-[7px] pb-4 transform -rotate-2 origin-center w-[659px] comics text-center relative font-[700] pt-[50px]">
+              <motion.div
+                ref={ref1}
+                initial={{ opacity: 0, x: -200 }}
+                animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : -200 }}
+                transition={{ duration: 0.5 }}
+                className="bg-white shadow-md pl-[30px] mx-[16%] pr-[7px] pb-4 transform -rotate-2 origin-center w-[659px] comics text-center relative font-[700] pt-[50px]"
+              >
                 <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[93px] w-[93px] bg-[#FF9C4A] rounded-full -top-10 -left-10 text-[18px]">
                   <span className="text-[#A55200] text-[18px]">PHASE</span> 1
                 </h1>
@@ -73,9 +126,15 @@ const Landing = () => {
                     - SPREAD THE WORD ON SOCIAL MEDIA
                   </li>
                 </ul>
-              </div>
+              </motion.div>
 
-              <div className="bg-white mt-[100px] mr-[10%] shadow-md pl-[10px] pr-[2px] pb-4 transform rotate-3 origin-center w-[679px] comics text-center relative font-[700] pt-[50px]">
+              <motion.div
+                ref={ref2}
+                initial={{ opacity: 0, x: 200 }}
+                animate={{ opacity: inView2 ? 1 : 0, x: inView2 ? 0 : 200 }}
+                transition={{ duration: 0.5 }}
+                className="bg-white mt-[100px] mr-[10%] shadow-md pl-[10px] pr-[2px] pb-4 transform rotate-3 origin-center w-[679px] comics text-center relative font-[700] pt-[50px]"
+              >
                 <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[93px] w-[93px] bg-[#FF9C4A] rounded-full -top-10 -right-10 text-[18px]">
                   <span className="text-[#A55200] text-[18px]">PHASE</span> 2
                 </h1>
@@ -91,10 +150,16 @@ const Landing = () => {
                     - CREATE COMMUNITY DISCORD
                   </li>
                 </ul>
-              </div>
+              </motion.div>
             </div>
 
-            <div className="flex justify-between absolute bottom-20 w-full pt-[130px] items-start">
+            <motion.div
+              ref={ref3}
+              initial={{ opacity: 0, x: -200 }}
+              animate={{ opacity: inView3 ? 1 : 0, x: inView3 ? 0 : -200 }}
+              transition={{ duration: 0.5 }}
+              className="flex justify-between absolute bottom-20 w-full pt-[130px] items-start"
+            >
               <div className="bg-white shadow-md pl-[30px] mx-[13%] pr-[7px] pb-4 transform -rotate-2 origin-center w-[459px] comics text-center relative font-[700] pt-[50px]">
                 <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[93px] w-[93px] bg-[#FF9C4A] rounded-full -top-10 -left-10 text-[18px]">
                   <span className="text-[#A55200] text-[18px]">PHASE</span> 3
@@ -110,7 +175,13 @@ const Landing = () => {
                 </ul>
               </div>
 
-              <div className="bg-white mt-[280px] mr-[22%] shadow-md pl-[10px] pr-[2px] pb-4 transform rotate-3 origin-center w-[479px] comics text-center relative font-[700] pt-[50px]">
+              <motion.div
+                ref={ref4}
+                initial={{ opacity: 0, x: 200 }}
+                animate={{ opacity: inView4 ? 1 : 0, x: inView4 ? 0 : 200 }}
+                transition={{ duration: 0.5 }}
+                className="bg-white mt-[280px] mr-[22%] shadow-md pl-[10px] pr-[2px] pb-4 transform rotate-3 origin-center w-[479px] comics text-center relative font-[700] pt-[50px]"
+              >
                 <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[93px] w-[93px] bg-[#FF9C4A] rounded-full -top-10 -right-10 text-[18px]">
                   <span className="text-[#A55200] text-[18px]">PHASE</span> 4
                 </h1>
@@ -119,8 +190,8 @@ const Landing = () => {
                   VIBE OUT AND <br /> RIDE IT TO THE MOON
                 </p>
                 {/* </ul> */}
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
 
@@ -150,13 +221,25 @@ const Landing = () => {
               </li>
             </ul>
 
-            <div className="flex justify-center items-center">
+            <motion.div
+              ref={ref5}
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: inView5 ? 1 : 0, y: inView5 ? 0 : -100 }}
+              transition={{ duration: 0.5 }}
+              className="flex justify-center items-center"
+            >
               <img src={chart} alt="" />
-            </div>
+            </motion.div>
           </div>
         </div>
 
-        <div className="flex justify-center items-center pb-[180px] pt-[100px] relative">
+        <motion.div
+          ref={ref6}
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: inView6 ? 1 : 0, x: inView6 ? 0 : 100 }}
+          transition={{ duration: 0.5 }}
+          className="flex justify-center items-center pb-[180px] pt-[100px] relative"
+        >
           <div className="bg-primary pt-[97px] rounded-[18px] flex flex-col gap-5 items-center px-[190px] pb-[109px] relative">
             <img src={Container} alt="" className="absolute -left-40 -top-5" />
             <h2 className="text-[76px] leading-[96px] text-center text-[#FFE6CE] colab">
@@ -167,7 +250,7 @@ const Landing = () => {
               <img src={tgFooter} alt="" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
