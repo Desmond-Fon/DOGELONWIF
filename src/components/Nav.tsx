@@ -5,9 +5,9 @@ import { NavHashLink } from "react-router-hash-link";
 
 const Nav = () => {
     return (
-      <div className="mx-[5%] lg:mx-[14%] border-[0.5px] py-[8px] lg:py-[9px] px-[30px] lg:px-[145px] flex justify-between items-center bg-[#F7F7F7] rounded-full colab">
+      <div className="mx-[5%] lg:mx-[14%]  py-[8px] lg:py-[9px] px-[30px] lg:px-[145px] flex justify-between items-center bg-[#F7F7F7] rounded-full colab">
         <img src={icon1} alt="" className="w-[15px] lg:w-[60px]" />
-        <div className="flex justify-center items-center gap-[40px] text-[22px] lg:text-[15px] text-primary font-[400]">
+        <div className="flex justify-center items-center gap-[40px] text-[22px] lg:text-[15px] text-secondary font-[400]">
           <NavHashLink
             smooth
             to="/#home"

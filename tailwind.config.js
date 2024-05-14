@@ -7,6 +7,12 @@ export default {
         primary: "#E0872F",
         secondary: "#A55200",
       },
+      rotate: {
+        1: "6deg",
+        3: "20deg",
+        2: "14deg",
+        4: "12deg",
+      },
     },
   },
   plugins: [],

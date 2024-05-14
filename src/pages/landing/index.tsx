@@ -1,11 +1,12 @@
 import Nav from "../../components/Nav";
-import logo from "../../assets/logo.png";
+// import logo from "../../assets/logo.png";
 import arrow from "../../assets/arrow.png";
 import hero from "../../assets/hero.png";
 import chart from "../../assets/pie.png";
-// import paper from "../../assets/paper.png";
-// import paper2 from "../../assets/paper2.png";
-// import Container from "../../assets/Container.png";
+import section from "../../assets/section.png";
+import xFooter from "../../assets/xFooter.png";
+import tgFooter from "../../assets/tgFooter.png";
+import Container from "../../assets/footer.png";
 
 const Landing = () => {
   return (
@@ -14,132 +15,158 @@ const Landing = () => {
         <div className="sticky top-0 z-40">
           <Nav />
         </div>
-        <div className="headerBg mt-[68px] mx-[6%] rounded-[40px] bg-primary" id="home">
-          <div className="flex justify-center items-center flex-col">
-            <img src={logo} alt="" />
-            <p className="cals text-white font-[600] text-[25px] leading-[26px] tracking-[3%] w-[50%] text-center">
-              Completely stealth launched, no presale bullshit, zero taxes
-              (ever). Almost entire LP burned.{" "}
-              <span className="text-yellow">$nodiddy</span> is built by the
-              people, for the people.
-            </p>
+        <div
+          className="mt-[68px] mb-[194px] mx-[8%] rounded-[40px] bg-primary"
+          id="home"
+        >
+          <div className="flex justify-between items-center pt-[60px] pr-[68px] pl-[94px]">
+            <div className="flex flex-col items-center ">
+              <div className=" text-center transform rotate-1 origin-center">
+                <h1 className="text-[60px] text-white colab leading-[50px]">
+                  DOGELONWIF
+                </h1>
+                <h2 className="text-[185px] leading-[182px] text-white colab">
+                  HAT
+                </h2>
+                <p className="comics text-white font-[700] text-[17px] leading-[17px] tracking-[3%] px-[11%] text-center">
+                  DogelonWifHat is on a mission to get to the Moon! Wif a Hat of
+                  course :) , Embark with us on this journey to solidify our
+                  place as the top doggy wif a hat on Solana. We will harness
+                  the power of Elon Musk, Doge, and Wif!
+                </p>
+                <p className="comics text-white font-[700] text-[17px] leading-[17px] tracking-[3%] px-[11%] text-center pt-4">
+                  Won't you come and make history Wif us?
+                </p>
+              </div>
+              <button className="flex justify-center bg-[#FFF858] items-center gap-2 h-[55px] mt-[30px] w-[206px] bg-yellow rounded-full leading-[18px] cals font-[600] text-[17px] tracking-[3%]">
+                BUY NOW <img src={arrow} alt="" />
+              </button>
+            </div>
 
-            <button className="flex justify-center items-center gap-2 h-[55px] mt-[30px] w-[206px] bg-yellow rounded-full leading-[18px] cals font-[600] text-[17px] tracking-[3%]">
-              BUY NOW <img src={arrow} alt="" />
-            </button>
-
-            <img src={hero} alt="" />
+            <img src={hero} alt="" className="mr-[120px]" />
           </div>
         </div>
 
         <div
           id="roadmap"
-          className="roadmapBg mt-[142px] pb-[160px] flex flex-col items-center baloo "
+          className="mt-[142px] pb-[160px] flex flex-col items-center colab"
         >
-          <h1 className="text-white text-[234px] tracking-[-20px] leading-[190px]">
-            RoadMap
+          <h1 className="text-secondary text-center text-[140px] tracking-[-4px] pt-[68px] leading-[133px]">
+            Road <br />
+            Map
           </h1>
 
-          <div className="pt-14 flex justify-center gap-32">
-            <div className="flex flex-col items-start gap-16">
-              <div className="bg-yellow rounded-[25px] py-[25px] px-3 transform rotate-1 origin-center w-[330px] text-center relative">
-                {/* <img src={paper} alt="" className="absolute -top-14 -left-16" /> */}
-                <h1 className="baloo text-[41px]">
-                  <span className="text-[#66441D]">PHASE</span> 1
+          <div className="roadmapBg pt-14 flex justify-center gap-32 relative  w-full">
+            <img src={section} alt="" className="relative" />
+            <div className="flex justify-between absolute w-full pt-[40px] items-start">
+              <div className="bg-white shadow-md pl-[30px] mx-[16%] pr-[7px] pb-4 transform -rotate-2 origin-center w-[659px] comics text-center relative font-[700] pt-[50px]">
+                <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[93px] w-[93px] bg-[#FF9C4A] rounded-full -top-10 -left-10 text-[18px]">
+                  <span className="text-[#A55200] text-[18px]">PHASE</span> 1
                 </h1>
-                <ul className="text-left baloo pl-4">
-                  <li className="text-[30px] leading-[48px]">
+                <ul className="text-left pl-4">
+                  <li className="text-[20px] leading-[32px]">
                     - STEALTH LAUNCH{" "}
-                    <span className="text-[#66441D]">$NODIDDY</span>
+                    <span className="text-[#66441D]">$DOGELONWIFHAT</span>
                   </li>
-                  <li className="text-[30px] leading-[48px]">- 100 HOLDERS</li>
-                  <li className="text-[30px] leading-[48px]">
-                    - SPREAD THE WORD ON SOCIAL MEDIA USING #NODIDDY
+                  <li className="text-[20px] leading-[32px]">- 100 HOLDERS</li>
+                  <li className="text-[20px] leading-[32px]">
+                    - SPREAD THE WORD ON SOCIAL MEDIA
                   </li>
                 </ul>
               </div>
-              <div className="bg-yellow rounded-[25px] py-[30px] px-3 transform rotate-3 origin-center w-[330px] text-center relative">
-                <h1 className="baloo text-[41px]">
-                  <span className="text-[#66441D] pb-3">PHASE</span> 3
+
+              <div className="bg-white mt-[100px] mr-[10%] shadow-md pl-[10px] pr-[2px] pb-4 transform rotate-3 origin-center w-[679px] comics text-center relative font-[700] pt-[50px]">
+                <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[93px] w-[93px] bg-[#FF9C4A] rounded-full -top-10 -right-10 text-[18px]">
+                  <span className="text-[#A55200] text-[18px]">PHASE</span> 2
                 </h1>
-                <ul className="text-left baloo pl-4">
-                  <li className="text-[30px] leading-[48px]">
-                    - 1,000 HOLDERS
+                <ul className="text-left pl-4">
+                  <li className="text-[20px] leading-[32px]">
+                    - COINGECKO/COINMARKETCAP LISTING
                   </li>
-                  <li className="text-[30px] leading-[48px]">
-                    - COINBASE/GEMINI LISTINGS
+                  <li className="text-[20px] leading-[32px]">
+                    - COMMUNITY PARTNERSHIPS
                   </li>
-                  <li className="text-[30px] leading-[48px]">
-                    - <span className="text-[#66441D]">$NODIDDY</span>{" "}
-                    DECENTRALIZED EXCHANGE
+                  <li className="text-[20px] leading-[32px]">- CEX LISTINGS</li>
+                  <li className="text-[20px] leading-[32px]">
+                    - CREATE COMMUNITY DISCORD
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="flex flex-col items-start gap-10 mt-10">
-              <div className="bg-yellow rounded-[25px] py-[25px] px-3 transform -rotate-2 origin-center w-[330px] text-center relative">
-                <h1 className="baloo text-[41px]">
-                  <span className="text-[#66441D]">PHASE</span> 2
+            <div className="flex justify-between absolute bottom-20 w-full pt-[130px] items-start">
+              <div className="bg-white shadow-md pl-[30px] mx-[13%] pr-[7px] pb-4 transform -rotate-2 origin-center w-[459px] comics text-center relative font-[700] pt-[50px]">
+                <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[93px] w-[93px] bg-[#FF9C4A] rounded-full -top-10 -left-10 text-[18px]">
+                  <span className="text-[#A55200] text-[18px]">PHASE</span> 3
                 </h1>
-                <ul className="text-left baloo pl-4">
-                  <li className="text-[30px] leading-[48px]">
-                    - COINGECKO / COINMARKETCAP LISTINGS
+                <ul className="text-left pl-4">
+                  <li className="text-[20px] leading-[32px]">- 1000 HOLDERS</li>
+                  <li className="text-[20px] leading-[32px]">
+                    - COINBASE/GEMINI LISTING
                   </li>
-                  <li className="text-[30px] leading-[48px]">
-                    - COMMUNITY PARTNERSHIPS
-                  </li>
-                  <li className="text-[30px] leading-[48px]">- CEX LISTINGS</li>
-                  <li className="text-[30px] leading-[48px]">
-                    - CREATE <span className="text-[#66441D]">$NODIDDY</span>{" "}
-                    DISCORD
+                  <li className="text-[20px] leading-[32px]">
+                    - - LAUNCH DECENTRALIZED EXCHANGE
                   </li>
                 </ul>
               </div>
-              <div className="bg-yellow rounded-[25px] py-[65px] px-3 transform -rotate-4 origin-center w-[330px] text-center relative">
-                {/* <img
-                  src={paper2}
-                  alt=""
-                  className="absolute -bottom-[80px] -right-16"
-                /> */}
-                <h1 className="baloo text-[41px]">
-                  <span className="text-[#66441D]">PHASE</span> 1
+
+              <div className="bg-white mt-[280px] mr-[22%] shadow-md pl-[10px] pr-[2px] pb-4 transform rotate-3 origin-center w-[479px] comics text-center relative font-[700] pt-[50px]">
+                <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[93px] w-[93px] bg-[#FF9C4A] rounded-full -top-10 -right-10 text-[18px]">
+                  <span className="text-[#A55200] text-[18px]">PHASE</span> 4
                 </h1>
-                <p className="text-center baloo pl-4 text-[30px] leading-[48px]">
-                  WE VIBE OUT AND RIDE THE MOON, NODIDDY
+                {/* <ul className="text-left pl-4"> */}
+                <p className="text-[22px] leading-[32px]">
+                  VIBE OUT AND <br /> RIDE IT TO THE MOON
                 </p>
+                {/* </ul> */}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="pt-[230px] flex items-center flex-col baloo" id="tokenomics">
-          <h1 className="text-[145px] text-white leading-[122px] tracking-[-6px]">
+        <div className="pt-[70px] flex items-center flex-col " id="tokenomics">
+          <h1 className="text-[120px] colab text-secondary leading-[150px] tracking-[-6px]">
             Tokenomics
           </h1>
-          <p className="text-center text-[42px] leading-[33px] text-white tracking-[-2px] pb-[100px]">
-            TOTAL SUPPLY : <span className="text-yellow">1,000,000,000</span>
+          <p className="text-center baloo text-[42px] leading-[33px] text-black tracking-[-2px] pb-[128px]">
+            TOTAL SUPPLY : <span className="text-secondary">1,000,000,000</span>
           </p>
 
-          <div className="w-[85%] bg-gradient-to-b from-colFrom to-colTo pt-[95px] rounded-t-[100px] pb-[100px]">
-            <ul className="flex flex-col text-center gap-[25px] list-disc text-white cals text-[32px] leading-[37px] font-[600] px-[22%] pb-[145px]">
-              <li className="">Initial burned Liquidity Pool: 70%</li>
-              <li>
+          <div className="w-[85%] rounded-t-[100px] pb-[100px]">
+            <ul className="flex flex-col text-center gap-[25px]  text-secondary comics text-[32px] leading-[37px] font-[600] px-[22%] pb-[145px]">
+              <li className=" flex justify-center gap-5 items-center">
+                <div className="h-[10px] w-[10px] rounded-full bg-secondary"></div>{" "}
+                Initial burned Liquidity Pool: 70%
+              </li>
+              <li className="flex justify-center w-full gap-5 items-start">
+                <span className="h-[10px] w-[30px] mt-4 rounded-full bg-secondary"></span>
                 20% of the supply is being held in a multi-sig wallet only to be
                 used as tokens for future Centralized exchange listings, Bridges
                 and Liquidity pools.
               </li>
-              <li>Marketing and promotion : 10%</li>
+              <li className=" flex justify-center gap-5 items-center">
+                <div className="h-[10px] w-[10px] rounded-full bg-secondary"></div>
+                Marketing and promotion : 10%
+              </li>
             </ul>
 
             <div className="flex justify-center items-center">
-                <img src={chart} alt="" />
+              <img src={chart} alt="" />
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center items-center pb-10">
-{/* <img src={Container} alt="" /> */}
+        <div className="flex justify-center items-center pb-[180px] pt-[100px] relative">
+          <div className="bg-primary pt-[97px] rounded-[18px] flex flex-col gap-5 items-center px-[190px] pb-[109px] relative">
+            <img src={Container} alt="" className="absolute -left-40 -top-5" />
+            <h2 className="text-[76px] leading-[96px] text-center text-[#FFE6CE] colab">
+              Join our <br /> community
+            </h2>
+            <div className="flex justify-center items-center gap-3">
+              <img src={xFooter} alt="" />
+              <img src={tgFooter} alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

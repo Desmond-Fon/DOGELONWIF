@@ -1,22 +1,40 @@
 @font-face {
-  font-family: 'ComicsSans';
-  src: url('./assets/fonts/ComicSansMS3.ttf') format('opentype');
+  font-family: "ComicsSans";
+  src: url("./assets/fonts/ComicSansMS3.ttf") format("opentype");
 }
 
 @font-face {
-  font-family: 'colaboose';
-  src: url('./assets/fonts/calabooseDEMO.otf') format('opentype');
+  font-family: "colaboose";
+  src: url("./assets/fonts/calabooseDEMO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CalSans";
+  src: url("./assets/fonts/CalSans-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'boloo';
+  src: url('./assets/fonts/BalooPaaji-Regular.ttf') format('opentype');
+  /* Add more font formats if necessary */
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 .comics {
-  font-family: 'ComicsSans', sans-serif;
-} 
+  font-family: "ComicsSans", sans-serif;
+}
 
 .colab {
-  font-family: 'colaboose', sans-serif;
+  font-family: "colaboose", sans-serif;
+}
+
+.cal {
+  font-family: "CalSans", sans-serif;
+}
+
+.baloo {
+  font-family: 'boloo', sans-serif;
 } 
