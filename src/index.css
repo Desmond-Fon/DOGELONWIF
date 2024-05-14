@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'ComicsSans';
+  src: url('./assets/fonts/ComicSansMS3.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'colaboose';
+  src: url('./assets/fonts/calabooseDEMO.otf') format('opentype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.comics {
+  font-family: 'ComicsSans', sans-serif;
+} 
+
+.colab {
+  font-family: 'colaboose', sans-serif;
+} 
