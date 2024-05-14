@@ -8,7 +8,7 @@ export default {
         secondary: "#A55200",
       },
       rotate: {
-        1: "6deg",
+        1: "7deg",
         3: "20deg",
         2: "14deg",
         4: "12deg",

@@ -19,7 +19,7 @@ const Landing = () => {
           className="mt-[68px] mb-[194px] mx-[8%] rounded-[40px] bg-primary"
           id="home"
         >
-          <div className="flex justify-between items-center pt-[60px] pr-[68px] pl-[94px]">
+          <div className="flex justify-between items-center pt-[60px] pr-[68px] pl-[122px]">
             <div className="flex flex-col items-center ">
               <div className=" text-center transform rotate-1 origin-center">
                 <h1 className="text-[60px] text-white colab leading-[50px]">
@@ -28,7 +28,7 @@ const Landing = () => {
                 <h2 className="text-[185px] leading-[182px] text-white colab">
                   HAT
                 </h2>
-                <p className="comics text-white font-[700] text-[17px] leading-[17px] tracking-[3%] px-[11%] text-center">
+                <p className="comics text-white font-[700] text-[17px] leading-[17px] tracking-[3%] px-[3%] text-center">
                   DogelonWifHat is on a mission to get to the Moon! Wif a Hat of
                   course :) , Embark with us on this journey to solidify our
                   place as the top doggy wif a hat on Solana. We will harness
@@ -38,7 +38,7 @@ const Landing = () => {
                   Won't you come and make history Wif us?
                 </p>
               </div>
-              <button className="flex justify-center bg-[#FFF858] items-center gap-2 h-[55px] mt-[30px] w-[206px] bg-yellow rounded-full leading-[18px] cals font-[600] text-[17px] tracking-[3%]">
+              <button className="flex justify-center bg-[#FFF858] items-center gap-2 h-[40px] mt-[50px] w-[155px] bg-yellow rounded-full leading-[18px] cal font-[800] text-[13px] tracking-[3%]">
                 BUY NOW <img src={arrow} alt="" />
               </button>
             </div>
