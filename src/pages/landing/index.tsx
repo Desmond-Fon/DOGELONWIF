@@ -58,7 +58,7 @@ const Landing = () => {
           <Nav />
         </motion.div>
         <div
-          className="mt-[26px] lg:mt-[68px] lg:mb-[194px] mx-[10%] lg:mx-[8%] rounded-[13px] lg:rounded-[40px] bg-primary"
+          className="mt-[26px] lg:mt-[68px] lg:mb-[194px] mx-[5%] lg:mx-[8%] rounded-[13px] lg:rounded-[40px] bg-primary"
           id="home"
         >
           <motion.div
