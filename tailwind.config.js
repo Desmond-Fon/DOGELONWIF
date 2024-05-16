@@ -12,6 +12,7 @@ export default {
         3: "20deg",
         2: "14deg",
         4: "12deg",
+        5: '4deg'
       },
     },
   },

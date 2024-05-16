@@ -3,6 +3,7 @@ import arrow from "../../assets/arrow.png";
 import hero from "../../assets/hero.png";
 import chart from "../../assets/pie.png";
 import section from "../../assets/section.png";
+import mobileMap from "../../assets/mobileMap.png";
 import xFooter from "../../assets/xFooter.png";
 import footer2 from "../../assets/footer2.png";
 import tgFooter from "../../assets/tgFooter.png";
@@ -109,7 +110,111 @@ const Landing = () => {
           </h1>
 
           <div className="roadmapBg pt-14 flex justify-center gap-32 relative  w-full">
-            <img src={section} alt="" className="relative" />
+            <img src={section} alt="" className="relative hidden lg:block" />
+
+            <img src={mobileMap} alt="" className="relative lg:hidden -top-32" />
+            <div className="flex lg:hidden justify-between absolute w-full pt-[0px] items-start">
+              <div className="flex lg:hidden flex-col justify-between absolute w-full pt-[20px] items-center gap-10">
+                <motion.div
+                  // ref={ref1}
+                  // initial={{ opacity: 0, x: -50 }}
+                  // animate={{
+                  //   opacity: inView1 ? 1 : 1,
+                  //   x: inView1 ? 0 : -50,
+                  // }}
+                  // transition={{ duration: 0.5 }}
+                  className="bg-white shadow-md pl-[5px] mx-auto pr-[3px] pb-4 transform -rotate-5 origin-center w-[250px] comics text-center relative font-[700] pt-[10px]"
+                >
+                  <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[50px] w-[50px] bg-[#FF9C4A] rounded-full -top-5 -left-5 text-[10px] p-3">
+                    <span className="text-[#A55200] text-[10px]">PHASE</span> 1
+                  </h1>
+                  <ul className="text-left pl-4">
+                    <li className="text-[12px] leading-[15px]">
+                      - STEALTH LAUNCH{" "}
+                      <span className="text-[#66441D]">$DOGELONWIFHAT</span>
+                    </li>
+                    <li className="text-[12px] leading-[15px]">
+                      - 100 HOLDERS
+                    </li>
+                    <li className="text-[12px] leading-[15px]">
+                      - SPREAD THE WORD ON SOCIAL MEDIA
+                    </li>
+                  </ul>
+                </motion.div>
+
+                <motion.div
+                  // ref={ref2}
+                  // initial={{ opacity: 0, x: 50 }}
+                  // animate={{ opacity: inView2 ? 1 : 1, x: inView2 ? 0 : 50 }}
+                  // transition={{ duration: 0.5 }}
+                  className="bg-white shadow-md pl-[5px] mx-auto pr-[10px] pb-4 transform rotate-5 origin-center w-[250px] comics text-center relative font-[700] pt-[10px]"
+                >
+                  <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[50px] w-[50px] bg-[#FF9C4A] rounded-full -top-6 -right-4 text-[10px] p-3">
+                    <span className="text-[#A55200] text-[10px]">PHASE</span> 2
+                  </h1>
+                  <ul className="text-left pl-4">
+                    <li className="text-[12px] leading-[15px]">
+                      - COINGECKO/COINMARKETCAP LISTING
+                    </li>
+                    <li className="text-[12px] leading-[15px]">
+                      - COMMUNITY PARTNERSHIPS
+                    </li>
+                    <li className="text-[12px] leading-[15px]">
+                      - CEX LISTINGS
+                    </li>
+                    <li className="text-[12px] leading-[15px]">
+                      - CREATE COMMUNITY DISCORD
+                    </li>
+                  </ul>
+                </motion.div>
+                {/* </div> */}
+
+                {/* <div className="flex lg:hidden flex-col justify-between absolute w-full pt-[120px] items-center gap-20"> */}
+                <motion.div
+                  // ref={ref3}
+                  // initial={{ opacity: 0, x: -50 }}
+                  // animate={{
+                  //   opacity: inView3 ? 1 : 0,
+                  //   x: inView3 ? 0 : -50,
+                  // }}
+                  // transition={{ duration: 0.5 }
+                  className="bg-white shadow-md pl-[5px] mt-[200px] mx-auto pr-[3px] pb-4 transform -rotate-5 origin-center w-[250px] comics text-center relative font-[700] pt-[10px]"
+                >
+                  <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[50px] w-[50px] bg-[#FF9C4A] rounded-full -top-5 -left-5 text-[10px] p-3">
+                    <span className="text-[#A55200] text-[10px]">PHASE</span> 3
+                  </h1>
+                  <ul className="text-left pl-4">
+                    <li className="text-[12px] leading-[15px]">
+                      - 1000 HOLDERS
+                    </li>
+                    <li className="text-[12px] leading-[15px]">
+                      - COINBASE/GEMINI LISTING
+                    </li>
+                    <li className="text-[12px] leading-[15px]">
+                      - LAUNCH DECENTRALIZED EXCHANGE
+                    </li>
+                  </ul>
+                </motion.div>
+
+                <motion.div
+                  // ref={ref4}
+                  // initial={{ opacity: 0, x: 50 }}
+                  // animate={{ opacity: inView4 ? 1 : 0, x: inView4 ? 0 : 50 }}
+                  // transition={{ duration: 0.5 }}
+                  className="bg-white shadow-md pl-[5px] mx-auto pr-[3px] pb-4 transform rotate-5 origin-center w-[250px] comics text-center relative font-[700] pt-[10px]"
+                >
+                  <h1 className="colab text-white flex justify-center items-center flex-col gap-0 absolute h-[50px] w-[50px] bg-[#FF9C4A] rounded-full -top-4 right-0 text-[10px] p-3">
+                    <span className="text-[#A55200] text-[10px]">PHASE</span> 4
+                  </h1>
+                  <ul className="text-left pl-4">
+                    <li className="text-[12px] leading-[15px]">
+                      VIBE OUT AND <br /> RIDE IT TO THE MOON
+                    </li>
+                  </ul>
+                </motion.div>
+              </div>
+            </div>
+
             <div className="hidden lg:flex justify-between absolute w-full pt-[40px] items-start">
               <motion.div
                 ref={ref1}
@@ -175,7 +280,7 @@ const Landing = () => {
                     - COINBASE/GEMINI LISTING
                   </li>
                   <li className="text-[20px] leading-[32px]">
-                    - - LAUNCH DECENTRALIZED EXCHANGE
+                    - LAUNCH DECENTRALIZED EXCHANGE
                   </li>
                 </ul>
               </div>
@@ -201,7 +306,7 @@ const Landing = () => {
         </div>
 
         <div
-          className="pt-[80px] lg:pt-[70px] flex items-center flex-col "
+          className="pt-[0px] lg:pt-[70px] flex items-center flex-col "
           id="tokenomics"
         >
           <h1 className="text-[33px] lg:text-[120px] colab text-secondary leading-[42px] lg:leading-[150px] tracking-[-2px] lg:tracking-[-6px]">
@@ -271,7 +376,11 @@ const Landing = () => {
             </div>
           </div>
 
-          <img src={footer2} alt="" className="lg:hidden -mt-[170px] relative z-40" />
+          <img
+            src={footer2}
+            alt=""
+            className="lg:hidden -mt-[170px] relative z-40"
+          />
         </motion.div>
       </div>
     </div>
