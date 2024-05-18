@@ -3,9 +3,15 @@ import React, { useEffect, useState } from "react";
 
 interface CountdownProps {
   targetDate: Date;
+  mainTextSize: string;
+  subTextSize: string;
 }
 
-const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
+const CountdownTimer: React.FC<CountdownProps> = ({
+  targetDate,
+  mainTextSize,
+  subTextSize,
+}) => {
   const calculateTimeLeft = () => {
     const difference = +targetDate - +new Date();
     let timeLeft = {};
@@ -40,10 +46,15 @@ const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
 
   return (
     <div
-      className="colab text-[12px] lg:text-[14px] leading-[17px] text-center bg-white text-primary px-3 lg:px-12 rounded-full py-1 lg:py-3 w-full"
+      className={`colab ${mainTextSize} text-center bg-white text-primary px-3 lg:px-12 rounded-full py-1 lg:py-3 w-full `}
     >
-      {`${timeLeft.days} DAYS : ${timeLeft.hours} HRS : ${timeLeft.minutes} MINS : ${timeLeft.seconds} SECS`}{" "} <br />
-      <span className="text-[10px] lg:text-[12px] leading-[12px] tracking-[0px]">TO LAUNCH</span>
+      {`${timeLeft.days} DAYS : ${timeLeft.hours} HRS : ${timeLeft.minutes} MINS : ${timeLeft.seconds} SECS`}{" "}
+      <br />
+      <span
+        className={`${subTextSize}`}
+      >
+        TO LAUNCH
+      </span>
     </div>
   );
 };

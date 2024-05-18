@@ -74,7 +74,11 @@ const Landing = () => {
           >
             <div className="flex justify-center items-center mb-5">
               <div className="flex justify-center items-center w-[90%] lg:w-[40%]">
-                <CountdownTimer targetDate={launchDate} />
+                <CountdownTimer
+                  targetDate={launchDate}
+                  mainTextSize="text-[12px] lg:text-[14px] leading-[17px]"
+                  subTextSize="text-[10px] lg:text-[12px] leading-[12px] tracking-[0px]"
+                />
               </div>
             </div>
             <div className="flex justify-center lg:justify-between flex-col lg:flex-row items-center lg:pr-[68px] lg:pl-[122px]  px-[70px]">
@@ -318,8 +322,31 @@ const Landing = () => {
           </div>
         </div>
 
+        <div className="pt-[0px] -mt-[70px] lg:mt-[0] lg:pt-[20px] flex items-center flex-col pb-[120px] lg:pb-[20px]">
+          <div className="transform -rotate-1 origin-center flex justify-center items-center flex-col">
+            <h1 className="text-[33px] lg:text-[82px] colab text-secondary leading-[42px] lg:leading-[100px] tracking-[-2px] lg:tracking-[-6px] text-center">
+              WHERE TO <br /> BUY
+            </h1>
+          </div>
+          <div className="bg-primary w-[90%] lg:w-[75%] mt-5 rounded-[18px] flex justify-center items-center transform -rotate-1 origin-center py-[30px] lg:py-[100px] px-[20px] lg:px-[80px] text-center text-white comics text-[13.5px] lg:text-[35px]">
+            <p>
+              No presale, no taxes, no bullshit. <br /> We are stealth launching
+              on Pump.fun and allowing <br /> everyone a fair shot at getting in
+              early, then moving <br /> straight to Raydium! <br /> Keep track
+              of the countdown to when we launch on <br /> pump.fun :)
+            </p>
+          </div>
+          <div className="flex justify-center mt-[50px] lg:mt-[80px] items-center w-[100%] lg:w-[80%]">
+            <CountdownTimer
+              targetDate={launchDate}
+              mainTextSize="text-[15px]  leading-[20px] lg:text-[44px] lg:leading-[57px]"
+              subTextSize="text-[20px] leading-[25px] lg:text-[57px] lg:leading-[73px] tracking-[0px]"
+            />
+          </div>
+        </div>
+
         <div
-          className="pt-[0px] lg:pt-[70px] flex items-center flex-col "
+          className="pt-[0px] lg:pt-[70px] flex items-center flex-col"
           id="tokenomics"
         >
           <h1 className="text-[33px] lg:text-[120px] colab text-secondary leading-[42px] lg:leading-[150px] tracking-[-2px] lg:tracking-[-6px]">
