@@ -10,6 +10,7 @@ import tgFooter from "../../assets/tgFooter.png";
 import Container from "../../assets/footer.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import CountdownTimer from "../../components/CountDown";
 
 const Landing = () => {
   const { ref: ref1, inView: inView1 } = useInView({
@@ -47,6 +48,8 @@ const Landing = () => {
     threshold: 0.5,
   });
 
+  const launchDate = new Date("2024-05-24T12:00:00");
+
   return (
     <div className="">
       <div className="pt-[35px] lg:pt-[100px]">
@@ -67,36 +70,42 @@ const Landing = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: inView7 ? 1 : 0 }}
             transition={{ duration: 0.5 }}
-            className="flex justify-center lg:justify-between flex-col lg:flex-row items-center lg:pt-[60px] lg:pr-[68px] lg:pl-[122px] px-[70px] lg:px-0 pt-[36px]"
+            className="lg:pt-[60px] w-full lg:px-0 pt-[36px]"
           >
-            <div className="flex flex-col items-center ">
-              <div className=" text-center lg:transform lg:rotate-1 lg:origin-center">
-                <h1 className="text-[29px] lg:text-[60px] text-white colab leading-[35px] lg:leading-[50px]">
-                  DOGELONWIF
-                </h1>
-                <h2 className="text-[91px] lg:text-[185px] leading-[80px] lg:leading-[182px] text-white colab">
-                  HAT
-                </h2>
-                <p className="comics text-white font-[700] text-[10px] lg:text-[17px] leading-[13px] lg:leading-[18px] tracking-[3%] lg:px-[3%] text-center">
-                  DogelonWifHat is on a mission to get to the Moon! Wif a Hat of
-                  course :) , Embark with us on this journey to solidify our
-                  place as the top doggy wif a hat on Solana. We will harness
-                  the power of Elon Musk, Doge, and Wif!
-                </p>
-                <p className="comics text-white font-[700] text-[10px] lg:text-[17px] leading-[17px] tracking-[3%] lg:px-[11%] text-center pt-1 lg:pt-4">
-                  Won't you come and make history Wif us?
-                </p>
+            <div className="flex justify-center items-center mb-5">
+              <div className="flex justify-center items-center w-[90%] lg:w-[40%]">
+                <CountdownTimer targetDate={launchDate} />
               </div>
-              <button className="flex justify-center bg-[#FFF858] items-center pt-1 lg:pt-0 px-2 gap-2 h-[20px] lg:h-[40px] mt-[20px] lg:mt-[50px] lg:w-[155px] bg-yellow rounded-full leading-[18px] cal font-[800] text-[10px] lg:text-[13px] tracking-[3%]">
-                BUY NOW <img src={arrow} alt="" />
-              </button>
             </div>
-
-            <img
-              src={hero}
-              alt=""
-              className="lg:mr-[120px] h-[260px] w-[290px] lg:w-[584px] lg:h-[628px]"
-            />
+            <div className="flex justify-center lg:justify-between flex-col lg:flex-row items-center lg:pr-[68px] lg:pl-[122px]  px-[70px]">
+              <div className="flex flex-col items-center ">
+                <div className=" text-center lg:transform lg:rotate-1 lg:origin-center">
+                  <h1 className="text-[29px] lg:text-[60px] text-white colab leading-[35px] lg:leading-[50px]">
+                    DOGELONWIF
+                  </h1>
+                  <h2 className="text-[91px] lg:text-[185px] leading-[80px] lg:leading-[182px] text-white colab">
+                    HAT
+                  </h2>
+                  <p className="comics text-white font-[700] text-[10px] lg:text-[17px] leading-[13px] lg:leading-[18px] tracking-[3%] lg:px-[3%] text-center">
+                    DogelonWifHat is on a mission to get to the Moon! Wif a Hat
+                    of course :) , Embark with us on this journey to solidify
+                    our place as the top doggy wif a hat on Solana. We will
+                    harness the power of Elon Musk, Doge, and Wif!
+                  </p>
+                  <p className="comics text-white font-[700] text-[10px] lg:text-[17px] leading-[17px] tracking-[3%] lg:px-[11%] text-center pt-1 lg:pt-4">
+                    Won't you come and make history Wif us?
+                  </p>
+                </div>
+                <button className="flex justify-center bg-[#FFF858] items-center pt-1 lg:pt-0 px-2 gap-2 h-[20px] lg:h-[40px] mt-[20px] lg:mt-[50px] lg:w-[155px] bg-yellow rounded-full leading-[18px] cal font-[800] text-[10px] lg:text-[13px] tracking-[3%]">
+                  BUY NOW <img src={arrow} alt="" />
+                </button>
+              </div>
+              <img
+                src={hero}
+                alt=""
+                className="lg:mr-[120px] h-[260px] w-[290px] lg:w-[584px] lg:h-[628px]"
+              />
+            </div>
           </motion.div>
         </div>
 
@@ -112,7 +121,11 @@ const Landing = () => {
           <div className="roadmapBg pt-14 flex justify-center gap-32 relative  w-full">
             <img src={section} alt="" className="relative hidden lg:block" />
 
-            <img src={mobileMap} alt="" className="relative lg:hidden -top-32" />
+            <img
+              src={mobileMap}
+              alt=""
+              className="relative lg:hidden -top-32"
+            />
             <div className="flex lg:hidden justify-between absolute w-full pt-[0px] items-start">
               <div className="flex lg:hidden flex-col justify-between absolute w-full pt-[20px] items-center gap-10">
                 <motion.div
