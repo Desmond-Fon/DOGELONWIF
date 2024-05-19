@@ -1,7 +1,7 @@
 import Nav from "../../components/Nav";
 import arrow from "../../assets/arrow.png";
 import hero from "../../assets/hero.png";
-import chart from "../../assets/pie.png";
+// import chart from "../../assets/pie.png";
 import section from "../../assets/section.png";
 import mobileMap from "../../assets/mobileMap.png";
 import xFooter from "../../assets/xFooter.png";
@@ -62,7 +62,7 @@ const Landing = () => {
           <Nav />
         </motion.div>
         <div
-          className="mt-[26px] lg:mt-[68px] lg:mb-[194px] mx-[5%] lg:mx-[8%] rounded-[13px] lg:rounded-[40px] bg-primary"
+          className="mt-[26px] lg:mt-[68px] lg:mb-[194px] mx-[3%] lg:mx-[8%] rounded-[13px] lg:rounded-[40px] bg-primary"
           id="home"
         >
           <motion.div
@@ -73,11 +73,11 @@ const Landing = () => {
             className="lg:pt-[60px] w-full lg:px-0 pt-[36px]"
           >
             <div className="flex justify-center items-center mb-5">
-              <div className="flex justify-center items-center w-[90%] lg:w-[40%]">
+              <div className="flex justify-center items-center w-[97%] lg:w-[45%]">
                 <CountdownTimer
                   targetDate={launchDate}
-                  mainTextSize="text-[12px] lg:text-[14px] leading-[17px]"
-                  subTextSize="text-[10px] lg:text-[12px] leading-[12px] tracking-[0px]"
+                  mainTextSize="text-[15px] lg:text-[20px] leading-[20px]"
+                  subTextSize="text-[14px] lg:text-[16px] leading-[12px] tracking-[0px]"
                 />
               </div>
             </div>
@@ -90,7 +90,7 @@ const Landing = () => {
                   <h2 className="text-[91px] lg:text-[185px] leading-[80px] lg:leading-[182px] text-white colab">
                     HAT
                   </h2>
-                  <p className="comics text-white font-[700] text-[10px] lg:text-[17px] leading-[13px] lg:leading-[18px] tracking-[3%] lg:px-[3%] text-center">
+                  <p className="comics text-white font-[700] text-[12px] lg:text-[17px] leading-[13px] lg:leading-[18px] tracking-[3%] lg:px-[3%] text-center">
                     DogelonWifHat is on a mission to get to the Moon! Wif a Hat
                     of course :) , Embark with us on this journey to solidify
                     our place as the top doggy wif a hat on Solana. We will
@@ -322,7 +322,14 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className="pt-[0px] -mt-[70px] lg:mt-[0] lg:pt-[20px] flex items-center flex-col pb-[120px] lg:pb-[20px]">
+        <motion.div
+          ref={ref5}
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: inView5 ? 1 : 0, y: inView5 ? 0 : -100 }}
+          transition={{ duration: 0.5 }}
+          className="pt-[0px] -mt-[70px] lg:mt-[0] lg:pt-[20px] flex items-center flex-col pb-[120px] lg:pb-[20px]"
+          id="whereToBuy"
+        >
           <div className="transform -rotate-1 origin-center flex justify-center items-center flex-col">
             <h1 className="text-[33px] lg:text-[82px] colab text-secondary leading-[42px] lg:leading-[100px] tracking-[-2px] lg:tracking-[-6px] text-center">
               WHERE TO <br /> BUY
@@ -339,13 +346,13 @@ const Landing = () => {
           <div className="flex justify-center mt-[50px] lg:mt-[80px] items-center w-[100%] lg:w-[80%]">
             <CountdownTimer
               targetDate={launchDate}
-              mainTextSize="text-[15px]  leading-[20px] lg:text-[44px] lg:leading-[57px]"
+              mainTextSize="text-[18px] leading-[20px] lg:text-[44px] lg:leading-[57px]"
               subTextSize="text-[20px] leading-[25px] lg:text-[57px] lg:leading-[73px] tracking-[0px]"
             />
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        {/* <div
           className="pt-[0px] lg:pt-[70px] flex items-center flex-col"
           id="tokenomics"
         >
@@ -384,7 +391,7 @@ const Landing = () => {
               <img src={chart} alt="" />
             </motion.div>
           </div>
-        </div>
+        </div> */}
 
         <motion.div
           ref={ref6}
@@ -403,16 +410,28 @@ const Landing = () => {
               Join our <br /> community
             </h2>
             <div className="flex justify-center items-center gap-3 lg:pl-[280px]">
-              <img
-                src={xFooter}
-                alt=""
-                className="w-[40px] h-[40px] lg:h-[74px] lg:w-[74px]"
-              />
-              <img
-                src={tgFooter}
-                alt=""
-                className="w-[40px] h-[40px] lg:h-[74px] lg:w-[74px]"
-              />
+              <a
+                href="https://x.com/dogelonwif"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={xFooter}
+                  alt=""
+                  className="w-[40px] h-[40px] lg:h-[74px] lg:w-[74px]"
+                />
+              </a>
+              <a
+                href="https://t.me/+43L6pUblRYljNjgx"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={tgFooter}
+                  alt=""
+                  className="w-[40px] h-[40px] lg:h-[74px] lg:w-[74px]"
+                />
+              </a>
             </div>
           </div>
 

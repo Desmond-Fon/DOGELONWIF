@@ -61,6 +61,14 @@ const Nav = () => {
           >
             Tokenomics
           </NavHashLink>
+          <NavHashLink
+            onClick={toggleMenu}
+            smooth
+            to="/#whereToBuy"
+            className="leading-[18px] hover:text-primary/75 text-[18px]"
+          >
+            Where to Buy
+          </NavHashLink>
 
           <div className="flex justify-center items-center gap-[9px] ">
             <img src={x} alt="" className="w-[30px]" />
@@ -90,17 +98,32 @@ const Nav = () => {
         >
           RoadMap
         </NavHashLink>
-        <NavHashLink
+        {/* <NavHashLink
           smooth
           to="/#tokenomics"
           className="leading-[18px] hover:text-primary/75 text-[18px]"
         >
           Tokenomics
+        </NavHashLink> */}
+        <NavHashLink
+          smooth
+          to="/#whereToBuy"
+          className="leading-[18px] hover:text-primary/75 text-[18px]"
+        >
+          Where to Buy
         </NavHashLink>
       </div>
       <div className="hidden lg:flex justify-center items-center gap-[3px]">
-        <img src={x} alt="" className="w-[15px] lg:w-[30px]" />
-        <img src={telegram} alt="" className="w-[15px] lg:w-[30px]" />
+        <a href="https://x.com/dogelonwif" target="_blank" rel="noreferrer">
+          <img src={x} alt="" className="w-[15px] lg:w-[30px]" />
+        </a>
+        <a
+          href="https://t.me/+43L6pUblRYljNjgx"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={telegram} alt="" className="w-[15px] lg:w-[30px]" />
+        </a>
       </div>
     </div>
   );
