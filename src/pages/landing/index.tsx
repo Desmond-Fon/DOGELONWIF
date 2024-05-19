@@ -343,11 +343,11 @@ const Landing = () => {
               of the countdown to when we launch on <br /> pump.fun :)
             </p>
           </div>
-          <div className="flex justify-center mt-[50px] lg:mt-[80px] items-center w-[100%] lg:w-[80%]">
+          <div className="flex justify-center mt-[50px] lg:mt-[80px] items-center w-[100%] lg:w-[67%]">
             <CountdownTimer
               targetDate={launchDate}
-              mainTextSize="text-[18px] leading-[20px] lg:text-[44px] lg:leading-[57px]"
-              subTextSize="text-[20px] leading-[25px] lg:text-[57px] lg:leading-[73px] tracking-[0px]"
+              mainTextSize="text-[18px] leading-[20px] lg:text-[75px] lg:leading-[95px]"
+              subTextSize="text-[20px] leading-[25px] lg:text-[57px] lg:leading-[73px] tracking-[0px] text-[#361A06]"
             />
           </div>
         </motion.div>

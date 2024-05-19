@@ -48,7 +48,7 @@ const CountdownTimer: React.FC<CountdownProps> = ({
     <div
       className={`colab ${mainTextSize} text-center bg-white text-primary px-3 lg:px-12 rounded-full py-1 lg:py-3 w-full `}
     >
-      {`${timeLeft.days} DAYS : ${timeLeft.hours} HRS : ${timeLeft.minutes} MINS : ${timeLeft.seconds} SECS`}{" "}
+      {`${timeLeft.days} DAYS : ${timeLeft.hours} HRS :  ${timeLeft.minutes} MINS : ${timeLeft.seconds} SECS`}{" "}
       <br />
       <span
         className={`${subTextSize}`}
