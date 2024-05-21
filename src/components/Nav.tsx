@@ -53,14 +53,14 @@ const Nav = () => {
           >
             RoadMap
           </NavHashLink>
-          <NavHashLink
+          {/* <NavHashLink
             onClick={toggleMenu}
             smooth
             to="/#tokenomics"
             className="leading-[18px] hover:text-primary/75 text-[18px]"
           >
             Tokenomics
-          </NavHashLink>
+          </NavHashLink> */}
           <NavHashLink
             onClick={toggleMenu}
             smooth

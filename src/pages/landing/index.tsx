@@ -11,6 +11,7 @@ import Container from "../../assets/footer.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import CountdownTimer from "../../components/CountDown";
+import { NavHashLink } from "react-router-hash-link";
 
 const Landing = () => {
   const { ref: ref1, inView: inView1 } = useInView({
@@ -100,9 +101,14 @@ const Landing = () => {
                     Won't you come and make history Wif us?
                   </p>
                 </div>
-                <button className="flex justify-center bg-[#FFF858] items-center pt-1 lg:pt-0 px-2 gap-2 h-[20px] lg:h-[40px] mt-[20px] lg:mt-[50px] lg:w-[155px] bg-yellow rounded-full leading-[18px] cal font-[800] text-[10px] lg:text-[13px] tracking-[3%]">
-                  BUY NOW <img src={arrow} alt="" />
-                </button>
+                <NavHashLink
+                  smooth
+                  to="/#whereToBuy"
+                  className="flex justify-center bg-[#FFF858] items-center py-2 px-4 gap-2 lg:px-[28px] lg:py-[13px] mt-[20px] lg:mt-[50px] rounded-full leading-[18px] cal font-[800] text-[15px] lg:text-[17px] tracking-[3%]"
+                >
+                  BUY NOW ON Pump.fun
+                  <img src={arrow} alt="" />
+                </NavHashLink>
               </div>
               <img
                 src={hero}
