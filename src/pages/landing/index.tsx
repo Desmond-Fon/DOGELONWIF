@@ -78,7 +78,7 @@ const Landing = () => {
                 <CountdownTimer
                   targetDate={launchDate}
                   mainTextSize="text-[15px] lg:text-[20px] leading-[20px]"
-                  subTextSize="text-[14px] lg:text-[16px] leading-[12px] tracking-[0px]"
+                  subTextSize="text-[18px] lg:text-[28px] leading-[12px] tracking-[0px]"
                 />
               </div>
             </div>
@@ -103,7 +103,9 @@ const Landing = () => {
                 </div>
                 <NavHashLink
                   smooth
-                  to="/#whereToBuy"
+                  to="https://pump.fun/9XzfTjmWCvqyp1vWQ9T6uNVZjixuKPppC5EEUK7uC6Kv"
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex justify-center bg-[#FFF858] items-center py-2 px-4 gap-2 lg:px-[28px] lg:py-[13px] mt-[20px] lg:mt-[50px] rounded-full leading-[18px] cal font-[800] text-[15px] lg:text-[17px] tracking-[3%]"
                 >
                   BUY NOW ON Pump.fun
@@ -355,6 +357,19 @@ const Landing = () => {
               mainTextSize="text-[18px] leading-[20px] lg:text-[75px] lg:leading-[95px]"
               subTextSize="text-[20px] leading-[25px] lg:text-[57px] lg:leading-[73px] tracking-[0px] text-[#361A06]"
             />
+          </div>
+
+          <div>
+            <NavHashLink
+              smooth
+              to="https://pump.fun/9XzfTjmWCvqyp1vWQ9T6uNVZjixuKPppC5EEUK7uC6Kv"
+              target="_blank"
+              rel="noreferrer"
+              className="flex justify-center bg-[#FFF858] items-center py-2 px-4 gap-2 lg:px-[28px] lg:py-[20px] mt-[10px] lg:mt-[30px] rounded-full leading-[18px] cal font-[800] text-[17px] lg:text-[17px] tracking-[3%]"
+            >
+              BUY NOW ON Pump.fun
+              <img src={arrow} alt="" />
+            </NavHashLink>
           </div>
         </motion.div>
 
