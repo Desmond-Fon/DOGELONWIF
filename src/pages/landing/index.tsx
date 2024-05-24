@@ -108,7 +108,7 @@ const Landing = () => {
                   rel="noreferrer"
                   className="flex justify-center bg-[#FFF858] items-center py-2 px-4 gap-2 lg:px-[28px] lg:py-[13px] mt-[20px] lg:mt-[50px] rounded-full leading-[18px] cal font-[800] text-[15px] lg:text-[17px] tracking-[3%]"
                 >
-                  BUY NOW ON Pump.fun
+                  BUY HERE ON Pump.fun
                   <img src={arrow} alt="" />
                 </NavHashLink>
               </div>
@@ -367,7 +367,7 @@ const Landing = () => {
               rel="noreferrer"
               className="flex justify-center bg-[#FFF858] items-center py-2 px-4 gap-2 lg:px-[28px] lg:py-[20px] mt-[10px] lg:mt-[30px] rounded-full leading-[18px] cal font-[800] text-[17px] lg:text-[17px] tracking-[3%]"
             >
-              BUY NOW ON Pump.fun
+              BUY HERE ON Pump.fun
               <img src={arrow} alt="" />
             </NavHashLink>
           </div>
