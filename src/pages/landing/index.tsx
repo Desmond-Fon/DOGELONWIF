@@ -49,7 +49,7 @@ const Landing = () => {
     threshold: 0.5,
   });
 
-  const launchDate = new Date("2024-05-24T12:00:00");
+  const launchDate = new Date("2024-05-24T12:21:00");
 
   return (
     <div className="">
