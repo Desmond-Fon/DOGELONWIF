@@ -1,48 +1,48 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 
 interface CountdownProps {
-  targetDate: Date;
-  mainTextSize: string;
-  subTextSize: string;
+  targetDate?: Date;
+  mainTextSize?: string;
+  subTextSize?: string;
 }
 
 const CountdownTimer: React.FC<CountdownProps> = ({
-  targetDate,
+  // targetDate,
   mainTextSize,
   subTextSize,
 }) => {
-  const calculateTimeLeft = () => {
-    const difference = +targetDate - +new Date();
-    let timeLeft = {};
+  // const calculateTimeLeft = () => {
+  //   const difference = +targetDate - +new Date();
+  //   let timeLeft = {};
 
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    } else {
-      timeLeft = {
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-      };
-    }
-    return timeLeft;
-  };
+  //   if (difference > 0) {
+  //     timeLeft = {
+  //       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+  //       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+  //       minutes: Math.floor((difference / 1000 / 60) % 60),
+  //       seconds: Math.floor((difference / 1000) % 60),
+  //     };
+  //   } else {
+  //     timeLeft = {
+  //       days: 0,
+  //       hours: 0,
+  //       minutes: 0,
+  //       seconds: 0,
+  //     };
+  //   }
+  //   return timeLeft;
+  // };
 
-  const [timeLeft, setTimeLeft] = useState<any>(calculateTimeLeft());
+  // const [timeLeft, setTimeLeft] = useState<any>(calculateTimeLeft());
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setTimeLeft(calculateTimeLeft());
+  //   }, 1000);
 
-    return () => clearInterval(timer);
-  }, [targetDate]);
+  //   return () => clearInterval(timer);
+  // }, [targetDate]);
 
   return (
     <div
